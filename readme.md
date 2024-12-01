@@ -28,10 +28,11 @@ As linguagens e ferramentas utilizadas incluem:
 - 🐍 **Python**  
 - 📓 **JupyterLab**  
 - 📊 **Pandas**
+- ⚙️ **PyAutoGui**
 
 ## 🔍 Como Utilizar  
 
 1. Clone o repositório:  
    ```bash
-   git https://github.com/wolneihd/aulas_matematica.git
+   git clone https://github.com/wolneihd/aulas_matematica.git
    ```
