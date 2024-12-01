@@ -38,3 +38,14 @@ def mmc(denominadores: list[int], mostrar_conta: bool = False) -> float:
             print('Resultado: ', resultado)
         else: 
             print(resultado)
+
+def potencia(a: int, n: int) -> int:
+    """
+    Retorna a potencialização de 2 números inteiros:
+    <br>
+    a: base
+    <br>
+    n: expoente
+    """
+    print(a ** n)
+    return a ** n
