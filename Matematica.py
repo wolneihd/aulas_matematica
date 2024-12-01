@@ -21,11 +21,11 @@ def mmc(denominadores: list[int], mostrar_conta: bool = False) -> float:
     divisores = []
     for index in range(2,11):
         for i, denominador in enumerate(denominadores):
-            if (denominador%index) == 0:                
+            if (denominador%index) == 0:       
+                if mostrar_conta:
+                    print(f'Divindo todos elementos por: {index} | {denominadores}')                           
                 denominadores[i] = denominador/index
                 divisores.append(index)       
-                if mostrar_conta:
-                    print(f'{copia} | {index}')  
 
     resultado = 1
     for numero in divisores:
@@ -34,6 +34,7 @@ def mmc(denominadores: list[int], mostrar_conta: bool = False) -> float:
     for numero in array_primos:
         resultado = resultado * numero
         if mostrar_conta:
-            print(f'{copia} | {numero}')  
-        
-    print(resultado)
+            print(f'Divindo todos elementos por: {numero} | {denominadores}')          
+            print('Resultado: ', resultado)
+        else: 
+            print(resultado)
